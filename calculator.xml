@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="top">
+
+    <TextView
+        android:id="@+id/AppHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/AppDef"
+        android:layout_below="@+id/AppHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This App helps to perform some basic mathematical operations"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="5sp"
+        android:textStyle="bold|italic"
+        />
+    <EditText
+        android:id="@+id/ip1"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AppDef"
+        android:layout_marginTop="25sp"
+        android:hint="Enter a number "
+        android:textAlignment="center"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/ip2"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ip1"
+        android:layout_marginTop="25sp"
+        android:hint="Enter a number "
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/addbtn"
+        android:layout_below="@+id/ip2"
+        android:text="+"
+        android:textSize="20sp"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="30sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subbtn"
+        android:layout_below="@+id/ip2"
+        android:text="-"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/addbtn"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="30sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mulbtn"
+        android:layout_below="@+id/addbtn"
+        android:text="X"
+        android:textSize="20sp"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="30sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/divbtn"
+        android:layout_below="@+id/subbtn"
+        android:text="/"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/mulbtn"
+        android:layout_marginStart="40sp"
+        android:layout_marginTop="30sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/modbtn"
+        android:layout_below="@+id/mulbtn"
+        android:text="%"
+        android:textSize="20sp"
+        android:layout_marginStart="165sp"
+        android:layout_marginTop="30sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ans"
+        android:layout_below="@id/modbtn"
+        android:hint="answer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"/>
+
+
+</RelativeLayout>
